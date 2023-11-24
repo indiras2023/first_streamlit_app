@@ -5,7 +5,7 @@ streamlit.header('Breakfast favorites')
 streamlit.text('🥣Oatmeal & Milk')
 streamlit.text('🥗Bluberry & Brocoli')
 streamlit.text('🐔egg Hard-Boiled Egg & Waffels')
-streamlit.text('🥑🍞 Avocado Toast')
+streamlit.text('🥑🍞 and Avocado Toast')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
 import pandas
