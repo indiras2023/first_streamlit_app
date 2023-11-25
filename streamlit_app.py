@@ -47,6 +47,7 @@ add_my_fruits = streamlit.text_input('What fruit would you like to add?',fruit_c
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ add_my_fruits)
 streamlit.write('Tanks for adding ', add_my_fruits)
 
-
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+
+from urllib.error import URLError
 
