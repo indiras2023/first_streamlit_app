@@ -42,7 +42,7 @@ streamlit.dataframe(my_data_rows)
 
 #Allow the end user to add a fruit to the list
 add_my_fruits = streamlit.text_input('What fruit would you like to add?',fruit_choice)
-add_my_fruits = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-add_my_fruits = add_my_fruits.set_index('Fruit')
-add_my_fruits = requests.get("https://fruityvice.com/api/fruit/"+ add_my_fruits)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ add_my_fruits)
 streamlit.write('Tanks for adding ', add_my_fruits)
+
+
